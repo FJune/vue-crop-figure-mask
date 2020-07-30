@@ -1,2 +1,1 @@
-# vue-crop-figure-mask
-vue-crop-figure-mask
+## 基于 vuecropper 开发，加上了一个小功能图形遮罩
