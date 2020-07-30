@@ -6,11 +6,11 @@
         v-show="!loading"
         :style="{
           'background:': '#000',
-					'width': trueWidth + 'px',
-					'height': trueHeight + 'px',
-					'transform': 'scale(' + scale + ',' + scale + ') ' + 'translate3d('+ x / scale + 'px,' + y / scale + 'px,' + '0)'
+          'width': trueWidth + 'px',
+          'height': trueHeight + 'px',
+          'transform': 'scale(' + scale + ',' + scale + ') ' + 'translate3d('+ x / scale + 'px,' + y / scale + 'px,' + '0)'
 					+ 'rotateZ('+ rotate * 90 +'deg)'
-					}"
+        }"
       >
         <img :src="imgs" alt="cropper-img" ref="cropperImg">
       </div>
@@ -25,9 +25,9 @@
       v-show="cropping"
       class="cropper-crop-box"
       :style="{
-					'width': cropW + 'px',
-					'height': cropH + 'px',
-					'transform': 'translate3d('+ cropOffsertX + 'px,' + cropOffsertY + 'px,' + '0)'
+        'width': cropW + 'px',
+        'height': cropH + 'px',
+        'transform': 'translate3d('+ cropOffsertX + 'px,' + cropOffsertY + 'px,' + '0)'
 				}"
     >
       <span class="cropper-view-box"
@@ -37,11 +37,11 @@
       >
         <img
           :style="{
-						'width': trueWidth + 'px',
-						'height': trueHeight + 'px',
-						'transform': 'scale(' + scale + ',' + scale + ') ' + 'translate3d('+ (x - cropOffsertX) / scale  + 'px,' + (y - cropOffsertY) / scale + 'px,' + '0)'
-						+ 'rotateZ('+ rotate * 90 +'deg)'
-						}"
+            'width': trueWidth + 'px',
+            'height': trueHeight + 'px',
+            'transform': 'scale(' + scale + ',' + scale + ') ' + 'translate3d('+ (x - cropOffsertX) / scale  + 'px,' + (y - cropOffsertY) / scale + 'px,' + '0)'
+            + 'rotateZ('+ rotate * 90 +'deg)'
+          }"
           :src="imgs"
           alt="cropper-img"
         >
